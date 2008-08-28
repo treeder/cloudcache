@@ -19,7 +19,7 @@ Cache cloudcache = new S3Cache(AWS_ACCESS_KEY, AWS_SECRET_KEY, "my-caching-bucke
 ==Put an object into the cache== 
 {{{
 // the 3600 is how long the object will live for, this one will expire after 1 hour
-cloudcache.set("somekey", myObject, 3600);
+cloudcache.put("somekey", myObject, 3600);
 }}}
 
 ==Get an object from the cache==
