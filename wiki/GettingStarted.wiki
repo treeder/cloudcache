@@ -13,7 +13,7 @@
 ==Create the Cache==
 {{{
 // it would be wise to do this only once and reuse it
-Cache cloudcache = new S3Cache(AWS_ACCESS_KEY, AWS_SECRET_KEY, "my-caching-bucket-name");
+CloudCache cloudcache = new S3Cache(AWS_ACCESS_KEY, AWS_SECRET_KEY, "my-caching-bucket-name");
 }}}
 
 ==Put an object into the cache== 
